@@ -1,0 +1,174 @@
+{
+    "name": "Basic",
+    "settings": {
+        "physics": {
+            "gravity": [
+                0,
+                -9.81,
+                0
+            ]
+        },
+        "render": {
+            "fog_end": 1000,
+            "tonemapping": 0,
+            "skybox": null,
+            "fog_density": 0.01,
+            "gamma_correction": 1,
+            "exposure": 1,
+            "fog_start": 1,
+            "global_ambient": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "skyboxIntensity": 1,
+            "fog_color": [
+                0,
+                0,
+                0
+            ],
+            "fog": "none",
+            "lightmapMaxResolution": 2048,
+            "skyboxMip": 0,
+            "lightmapSizeMultiplier": 16,
+            "lightmapMode": 0
+        }
+    },
+    "entities": {
+        "Root": {
+            "name": "Root",
+            "parent": null,
+            "resource_id": "Root",
+            "tags": [],
+            "enabled": true,
+            "components": {},
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "children": [
+                "Camera",
+                "Light",
+                "Cube"
+            ]
+        },
+        "Camera": {
+            "name": "Camera",
+            "parent": "Root",
+            "resource_id": "Camera",
+            "enabled": true,
+            "components": {
+                "camera": {
+                    "fov": 75,
+                    "farClip": 1000,
+                    "nearClip": 0.1,
+                    "projection": 0,
+                    "clearColor": [
+                        0.1,
+                        0.1,
+                        0.1
+                    ]
+                }
+            },
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "position": [
+                0,
+                0,
+                3
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "children": []
+        },
+        "Light": {
+            "name": "Light",
+            "parent": "Root",
+            "resource_id": "Light",
+            "enabled": true,
+            "components": {
+                "light": {
+                    "type": "directional"
+                }
+            },
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                45,
+                0,
+                0
+            ],
+            "children": []
+        },
+        "Cube": {
+            "name": "Cube",
+            "parent": "Root",
+            "resource_id": "Cube",
+            "enabled": true,
+            "components": {
+                "model": {
+                    "type": "box"
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "rotate"
+                    ],
+                    "scripts": {
+                        "rotate": {
+                            "enabled": true,
+                            "attributes": {
+                                "x": "10",
+                                "y": "20",
+                                "z": "30"
+                            }
+                        }
+                    }
+                }
+            },
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "children": []
+        }
+    },
+    "created": "2020-10-17T10:22:56.486Z",
+    "id": 1
+}
