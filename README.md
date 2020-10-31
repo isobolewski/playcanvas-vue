@@ -6,6 +6,10 @@ It is ment as a Boilerplate to start off your 3D applications and games
 \
 for more information look at the [PlayCanvas website](https://playcanvas.com)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88543acf-5b97-4592-8c0e-933ccad8855c/deploy-status)](https://app.netlify.com/sites/playcanvas-vue/deploys)
+
+See [Live Demo on Netlify](https://playcanvas-vue.netlify.app/)
+
 ## Project setup
 
 ```
