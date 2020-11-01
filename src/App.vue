@@ -56,4 +56,25 @@ body {
     }
   }
 }
+
+a.powered-by-playcanvas {
+  position: absolute;
+  z-index: 100;
+  bottom: 1rem;
+  right: 1rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a.powered-by-playcanvas {
+    img {
+      max-width: 150px;
+    }
+  }
+}
 </style>

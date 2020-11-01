@@ -1,6 +1,16 @@
 <template>
   <div class="stage-wrapper">
     <Stage></Stage>
+    <a
+      class="powered-by-playcanvas"
+      href="https://playcanvas.com"
+      rel="nofollow"
+      target="_blank"
+    >
+      <img
+        alt="Powered by PlayCanvas logo"
+        src="../assets/powered-by-playcanvas.png"
+    /></a>
   </div>
 </template>
 
