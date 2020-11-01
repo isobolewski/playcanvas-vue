@@ -16,7 +16,7 @@ View OpenSource Repo on [Github](https://github.com/isobolewski/playcanvas-vue)
 
 - Use JSON files from PlayCanvas editor to kick off your app
 - Use PLayCanvas scripts as Mixins
-- Use Ammo.js pysics
+- Use Ammo.js physics
 - Use Basis texture compression
 - Use the power and reactivity of Vue.js
 - Use VUEX state management
