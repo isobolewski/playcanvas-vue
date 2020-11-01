@@ -9,11 +9,23 @@
       >.
     </p>
     <p>
-      <br />For more info about PlayCanvas engine, the PlayCanvas Editor,<br />
+      <br />
+      For more info about PlayCanvas engine, the PlayCanvas Editor,<br />
       Documentation and Tutorials check out
-      <a href="https://playcanvas.com" target="_blank" rel="noopener"
-        >PlayCanvas website</a
+      <a href="https://playcanvas.com" target="_blank" rel="noopener">
+        PlayCanvas website</a
       >.
+    </p>
+    <p>
+      <br /><strong
+        >See the OpenSource repo on
+        <a
+          href="https://github.com/isobolewski/playcanvas-vue"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        ></strong
+      >
     </p>
     <h3>Installed CLI Plugins</h3>
     <ul>
