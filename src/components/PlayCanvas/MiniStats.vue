@@ -3,9 +3,18 @@
 </template>
 
 <script>
+import * as pcx from 'playcanvas/build/playcanvas-extras';
 export default {
   name: 'MiniStats',
-  mounted() {},
+  mounted() {
+    window.pc = this.$pc;
+    window.pcx = pcx;
+  },
+
+  destroyed() {
+    document.body.removeChild(this.MiniStats.div);
+    this.MiniStats = undefined;
+  },
 
   data() {
     return {
@@ -24,7 +33,8 @@ export default {
   methods: {
     initMiniStats() {
       const app = this.$pc.Application.getApplication();
-      this.MiniStats = new this.$pcx.MiniStats(app);
+      this.MiniStats = new pcx.MiniStats(app);
+      this.MiniStats.div.id = 'ministats';
     },
   },
 };
