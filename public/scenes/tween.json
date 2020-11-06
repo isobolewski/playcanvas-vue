@@ -1,0 +1,372 @@
+{
+    "name": "Untitled",
+    "created": "2020-10-26T10:10:52.588Z",
+    "settings": {
+        "physics": {
+            "gravity": [
+                0,
+                -9.8,
+                0
+            ]
+        },
+        "render": {
+            "fog_end": 1000,
+            "tonemapping": 0,
+            "skybox": null,
+            "fog_density": 0.01,
+            "gamma_correction": 1,
+            "exposure": 1,
+            "fog_start": 1,
+            "global_ambient": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "skyboxIntensity": 1,
+            "fog_color": [
+                0,
+                0,
+                0
+            ],
+            "lightmapMode": 1,
+            "fog": "none",
+            "lightmapMaxResolution": 2048,
+            "skyboxMip": 0,
+            "lightmapSizeMultiplier": 16
+        }
+    },
+    "entities": {
+        "87703879-1773-11eb-97ae-026349a27a7c": {
+            "position": [
+                2,
+                2,
+                -2
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Light",
+            "parent": "87703877-1773-11eb-97ae-026349a27a7c",
+            "resource_id": "87703879-1773-11eb-97ae-026349a27a7c",
+            "components": {
+                "light": {
+                    "vsmBlurSize": 11,
+                    "normalOffsetBias": 0.05,
+                    "color": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "outerConeAngle": 45,
+                    "castShadows": true,
+                    "intensity": 1,
+                    "bakeDir": true,
+                    "cookieAngle": 0,
+                    "cookieChannel": "rgb",
+                    "innerConeAngle": 40,
+                    "bake": false,
+                    "falloffMode": 0,
+                    "layers": [
+                        0
+                    ],
+                    "cookieIntensity": 1,
+                    "vsmBias": 0.01,
+                    "vsmBlurMode": 1,
+                    "type": "directional",
+                    "cookieFalloff": true,
+                    "isStatic": false,
+                    "shadowUpdateMode": 2,
+                    "cookieScale": [
+                        1,
+                        1
+                    ],
+                    "affectLightmapped": false,
+                    "shadowBias": 0.2,
+                    "affectDynamic": true,
+                    "cookieAsset": null,
+                    "cookieOffset": [
+                        0,
+                        0
+                    ],
+                    "shadowResolution": 1024,
+                    "enabled": true,
+                    "range": 8,
+                    "shadowDistance": 16,
+                    "shadowType": 0
+                }
+            },
+            "rotation": [
+                45,
+                135,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": []
+        },
+        "87703877-1773-11eb-97ae-026349a27a7c": {
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Root",
+            "parent": null,
+            "resource_id": "87703877-1773-11eb-97ae-026349a27a7c",
+            "components": {},
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": [
+                "87703878-1773-11eb-97ae-026349a27a7c",
+                "87703879-1773-11eb-97ae-026349a27a7c",
+                "8770387a-1773-11eb-97ae-026349a27a7c"
+            ]
+        },
+        "87703878-1773-11eb-97ae-026349a27a7c": {
+            "position": [
+                4,
+                3.5,
+                4
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Camera",
+            "parent": "87703877-1773-11eb-97ae-026349a27a7c",
+            "resource_id": "87703878-1773-11eb-97ae-026349a27a7c",
+            "components": {
+                "camera": {
+                    "projection": 0,
+                    "farClip": 1000,
+                    "clearColorBuffer": true,
+                    "layers": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4
+                    ],
+                    "priority": 0,
+                    "fov": 45,
+                    "clearDepthBuffer": true,
+                    "frustumCulling": true,
+                    "clearColor": [
+                        0.118,
+                        0.118,
+                        0.118,
+                        1
+                    ],
+                    "enabled": true,
+                    "orthoHeight": 4,
+                    "nearClip": 0.1,
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ]
+                }
+            },
+            "rotation": [
+                -30,
+                45,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": []
+        },
+        "8770387a-1773-11eb-97ae-026349a27a7c": {
+            "position": [
+                0,
+                0.5,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Box",
+            "parent": "87703877-1773-11eb-97ae-026349a27a7c",
+            "resource_id": "8770387a-1773-11eb-97ae-026349a27a7c",
+            "components": {
+                "model": {
+                    "layers": [
+                        0
+                    ],
+                    "isStatic": false,
+                    "castShadows": true,
+                    "castShadowsLightmap": true,
+                    "lightmapped": false,
+                    "materialAsset": null,
+                    "receiveShadows": true,
+                    "enabled": true,
+                    "castShadowsLightMap": false,
+                    "asset": null,
+                    "type": "box",
+                    "lightmapSizeMultiplier": 1,
+                    "batchGroupId": null
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "tween"
+                    ],
+                    "scripts": {
+                        "tween": {
+                            "enabled": true,
+                            "attributes": {
+                                "tweens": [
+                                    {
+                                        "autoPlay": true,
+                                        "event": "runtween",
+                                        "path": "localScale",
+                                        "relative": false,
+                                        "start": [
+                                            1,
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "end": [
+                                            1.2,
+                                            1.2,
+                                            1.2,
+                                            0
+                                        ],
+                                        "easingFunction": 8,
+                                        "easingType": 1,
+                                        "duration": 1000,
+                                        "delay": 0,
+                                        "repeat": 3,
+                                        "repeatDelay": 0,
+                                        "yoyo": true,
+                                        "startEvent": "",
+                                        "stopEvent": "",
+                                        "updateEvent": "",
+                                        "completeEvent": "complete",
+                                        "repeatEvent": ""
+                                    },
+                                    {
+                                        "autoPlay": false,
+                                        "event": "complete",
+                                        "path": "eulerAngles",
+                                        "relative": false,
+                                        "start": [
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "end": [
+                                            90,
+                                            180,
+                                            270,
+                                            0
+                                        ],
+                                        "easingFunction": 3,
+                                        "easingType": 2,
+                                        "duration": 1000,
+                                        "delay": 0,
+                                        "repeat": 3,
+                                        "repeatDelay": 0,
+                                        "yoyo": true,
+                                        "startEvent": "",
+                                        "stopEvent": "",
+                                        "updateEvent": "",
+                                        "completeEvent": "end2",
+                                        "repeatEvent": ""
+                                    },
+                                    {
+                                        "autoPlay": false,
+                                        "event": "end2",
+                                        "path": "model.material.diffuse",
+                                        "relative": false,
+                                        "start": [
+                                            1,
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "end": [
+                                            1,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "easingFunction": 0,
+                                        "easingType": 3,
+                                        "duration": 1000,
+                                        "delay": 0,
+                                        "repeat": 1,
+                                        "repeatDelay": 0,
+                                        "yoyo": true,
+                                        "startEvent": "",
+                                        "stopEvent": "",
+                                        "updateEvent": "",
+                                        "completeEvent": "move",
+                                        "repeatEvent": ""
+                                    },
+                                    {
+                                        "autoPlay": false,
+                                        "event": "move",
+                                        "path": "position",
+                                        "relative": false,
+                                        "start": [
+                                            0,
+                                            0.5,
+                                            0,
+                                            0
+                                        ],
+                                        "end": [
+                                            0,
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "easingFunction": 0,
+                                        "easingType": 0,
+                                        "duration": 1000,
+                                        "delay": 0,
+                                        "repeat": 3,
+                                        "repeatDelay": 0,
+                                        "yoyo": true,
+                                        "startEvent": "",
+                                        "stopEvent": "",
+                                        "updateEvent": "",
+                                        "completeEvent": "runtween",
+                                        "repeatEvent": ""
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": []
+        }
+    },
+    "id": 1025620
+}

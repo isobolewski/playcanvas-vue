@@ -2,8 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/playcanvas">PlayCanvas</router-link> |
-      <router-link to="/physics">PhysicsCubes</router-link>
+      <router-link to="/playcanvas">Basic</router-link> |
+      <router-link to="/physics">Physics</router-link> |
+      <router-link to="/tween">TweenJS</router-link>
     </div>
     <router-view />
   </div>

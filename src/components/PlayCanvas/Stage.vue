@@ -21,6 +21,7 @@ import LoadModulesMixin from './loadModulesMixin.js';
 import Preloader from './Preloader';
 import DisplayErrors from './DisplayErrors';
 import MiniStats from './MiniStats';
+import TweenMixin from './tweenMixin.js';
 
 // Import PlayCanvas scripts (Mixins) to be used in the app
 import RotateScript from '@/assets/scripts/rotate.js';
@@ -29,7 +30,7 @@ import BoxPlacementScript from '@/assets/scripts/boxPlacement.js';
 export default {
   name: 'PlayCanvasStage',
   components: { Preloader, DisplayErrors, MiniStats },
-  mixins: [LoadModulesMixin, RotateScript, BoxPlacementScript],
+  mixins: [LoadModulesMixin, RotateScript, BoxPlacementScript, TweenMixin],
 
   data() {
     return {

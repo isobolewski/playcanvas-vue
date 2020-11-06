@@ -15,8 +15,9 @@ View OpenSource Repo on [Github](https://github.com/isobolewski/playcanvas-vue)
 **Features:**
 
 - Use JSON files from PlayCanvas editor to kick off your app
-- Use PLayCanvas scripts as Mixins
+- Use PlayCanvas scripts as Mixins
 - Use Ammo.js physics
+- Use Tween.js Animations
 - Use Basis texture compression
 - Use the power and reactivity of Vue.js
 - Use VUEX state management

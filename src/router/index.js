@@ -24,7 +24,13 @@ const routes = [
     name: 'Physics',
     component: () => import(/* webpackChunkName: "physics" */ '../views/Physics.vue'),
     props: { sceneName: 'physicsCubes' },
-  }
+  },
+  {
+    path: '/tween',
+    name: 'TweenJS',
+    component: () => import(/* webpackChunkName: "tween" */ '../views/Tween.vue'),
+    props: { sceneName: 'tween' },
+  },
 ]
 
 const router = new VueRouter({
