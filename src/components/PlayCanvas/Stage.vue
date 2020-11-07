@@ -280,21 +280,8 @@ export default {
      */
     processScene: function() {
       const currentScene = this.$store.state.currentLoadedScene;
-      const app = this.$pc.Application.getApplication();
       // Do something in the scene...
       console.log('Process scene: ', currentScene);
-      const cube = currentScene.root.findByName('Cube');
-      app.assets.loadFromUrl(
-        '/assets/playcanvas.basis',
-        'texture',
-        function(err, asset) {
-          console.log(err, asset);
-          const material = new this.$pc.StandardMaterial();
-          material.diffuseMap = asset.resource;
-          material.update();
-          cube.model.meshInstances[0].material = material;
-        }.bind(this)
-      );
     },
 
     /**
