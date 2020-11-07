@@ -75,9 +75,8 @@ export default {
         this.$store.commit('setApp', app);
         // Hide the splashScreen
         this.splashScreen = false;
-        // Show the canvas
+        // Show the canvas and process current scene
         this.showCanvas = true;
-
         this.processScene();
       }.bind(this)
     );
@@ -129,11 +128,7 @@ export default {
         this.splashScreen = true;
         // Start app configuration or preload modules first
         if (settings.PRELOAD_MODULES.length > 0) {
-          this.loadModules(
-            settings.PRELOAD_MODULES,
-            settings.ASSET_PREFIX,
-            this.configure
-          );
+          this.processModules();
         } else {
           this.configure();
         }
@@ -244,6 +239,37 @@ export default {
           } else {
             // Error
             console.log('Scene Error: ', err);
+          }
+        }.bind(this)
+      );
+    },
+
+    /**
+     * Process module loading and initialize Basis compression
+     */
+    processModules: function() {
+      const modules = settings.PRELOAD_MODULES;
+      this.loadModules(
+        modules,
+        settings.ASSET_PREFIX,
+        function() {
+          // Check for BASIS texture compression
+          let moduleBasis = modules.find(
+            (module) => module.moduleName === 'BASIS'
+          );
+          if (moduleBasis !== undefined) {
+            const pc = this.$pc;
+            pc.basisDownload(
+              moduleBasis.glueUrl,
+              moduleBasis.wasmUrl,
+              moduleBasis.fallbackUrl,
+              function() {
+                console.log('BASIS texture compression loaded.');
+                this.configure();
+              }.bind(this)
+            );
+          } else {
+            this.configure();
           }
         }.bind(this)
       );

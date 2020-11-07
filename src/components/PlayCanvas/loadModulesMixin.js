@@ -17,7 +17,8 @@ const LoadModulesMixin = {
 
                 const wasm = this.wasmSupported();
                 modules.forEach(function (m) {
-                    if (!m.preload || m.preload) {
+                    // eslint-disable-next-line
+                    if (!m.hasOwnProperty('preload') || m.preload) {
                         if (wasm) {
                             this.loadWasmModuleAsync(m.moduleName, urlPrefix + m.glueUrl, urlPrefix + m.wasmUrl, asyncCallback);
                         } else {
