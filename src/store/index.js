@@ -8,6 +8,7 @@ export default new Vuex.Store({
     app: undefined,
     sceneName: undefined,
     currentLoadedScene: undefined,
+    basisModuleLoaded: false,
   },
   mutations: {
     setApp(state, data) {
@@ -18,7 +19,10 @@ export default new Vuex.Store({
     },
     setCurrentLoadedScene(state, data) {
       state.currentLoadedScene = data;
-    }
+    },
+    setBasisModuleLoaded(state, data) {
+      state.basisModuleLoaded = data;
+    },
   },
   actions: {
   },

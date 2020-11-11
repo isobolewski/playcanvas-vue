@@ -257,14 +257,17 @@ export default {
           let moduleBasis = modules.find(
             (module) => module.moduleName === 'BASIS'
           );
-          if (moduleBasis !== undefined) {
+          if (
+            moduleBasis !== undefined &&
+            !this.$store.state.basisModuleLoaded
+          ) {
             const pc = this.$pc;
             pc.basisDownload(
               moduleBasis.glueUrl,
               moduleBasis.wasmUrl,
               moduleBasis.fallbackUrl,
               function() {
-                console.log('BASIS texture compression loaded.');
+                this.$store.commit('setBasisModuleLoaded', true);
                 this.configure();
               }.bind(this)
             );
