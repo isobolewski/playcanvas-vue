@@ -71,6 +71,15 @@ a.powered-by-playcanvas {
   }
 }
 
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @media screen and (max-width: 768px) {
   a.powered-by-playcanvas {
     img {

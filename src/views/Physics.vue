@@ -2,7 +2,7 @@
   <div class="stage-wrapper">
     <Stage></Stage>
     <a
-      class="powered-by-playcanvas"
+      class="powered-by-playcanvas no-select"
       href="https://playcanvas.com"
       rel="nofollow"
       target="_blank"
