@@ -284,7 +284,7 @@ export default {
     processScene: function() {
       const currentScene = this.$store.state.currentLoadedScene;
       // Do something in the scene...
-      console.log('Process scene: ', currentScene);
+      // console.log('Process scene: ', currentScene);
     },
 
     /**

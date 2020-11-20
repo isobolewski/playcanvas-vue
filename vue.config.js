@@ -2,11 +2,12 @@ const path = require('path');
 const contentBase = path.resolve();
 
 module.exports = {
-    productionSourceMap: false,
+    productionSourceMap: true,
 
     configureWebpack: config => {
         config.optimization = {
-            minimize: false
+            moduleIds: 'natural',
+            mangleWasmImports: true,
         };
 
         config.devServer = {

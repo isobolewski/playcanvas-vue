@@ -4,12 +4,14 @@
     <a
       class="powered-by-playcanvas no-select"
       href="https://playcanvas.com"
-      rel="nofollow"
+      rel="noopener"
       target="_blank"
     >
       <img
         alt="Powered by PlayCanvas logo"
         src="../assets/powered-by-playcanvas.png"
+        width="257"
+        height="51"
     /></a>
   </div>
 </template>
