@@ -2,9 +2,9 @@
 
 This project combines the great PlayCanvas 3D engine with VUE.js.
 
-It is ment as a Boilerplate to start off your 3D applications or games.
+It is meant as a Boilerplate to start off your 3D applications or games.
 \
-For more information look at the [PlayCanvas website](https://playcanvas.com)
+For more information look at [PlayCanvas website](https://playcanvas.com) and [VUE.js website](https://vuejs.org)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88543acf-5b97-4592-8c0e-933ccad8855c/deploy-status)](https://app.netlify.com/sites/playcanvas-vue/deploys)
 
