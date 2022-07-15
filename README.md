@@ -6,6 +6,9 @@ It is meant as a Boilerplate to start off your 3D applications or games.
 \
 For more information look at [PlayCanvas website](https://playcanvas.com) and [VUE.js website](https://vuejs.org)
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/isobolewski/playcanvas-vue.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/isobolewski/playcanvas-vue/alerts/)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/isobolewski/playcanvas-vue.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/isobolewski/playcanvas-vue/alerts/)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88543acf-5b97-4592-8c0e-933ccad8855c/deploy-status)](https://app.netlify.com/sites/playcanvas-vue/deploys)
 
 See [Live Demo on Netlify](https://playcanvas-vue.netlify.app/)
